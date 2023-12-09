@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="anime.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-black fixed-top " >
+    <div class="container-fluid header " id="header">
+      <a class="navbar-brand" href="#"><img src="images/blcklily.avif" height="55" alt=""><span class="ms-3 h3 logo-b2">Black-Lily</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 ul-css ">
+          <li class="nav-item h5 ">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link " href="Beverage.html">Beverage</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+
+          <!-- book a reservation -->
+
+          <span>
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+             
+              <title>Restaurant Reservation</title>
+              <link rel="stylesheet" href="css/style.css">
+
+            </head>
+
+            <body>
+              <!-- Reservation button -->
+              <button class="reservation-button" onclick="openModal()" type="button">RESERVATION</button>
+
+              <!-- Reservation modal -->
+              <div id="reservationModal" class="modal">
+                <div class="modal-content bg-success-subtle">
+                  <span onclick="closeModal()" class="span-class">close</span>
+                  <h2>Restaurant Reservation</h2>
+                  <!-- Add reservation form or content here -->
+                  <p>Please fill out the reservation form.</p>
+                  <form>
+                    <!-- Reservation form fields go here -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="Time">Time:</label>
+                    <input type="time" id="date" name="Time" required>
+                    <br>
+                    <button type="submit" class="mt-3 bg-success">Submit Reservation</button>
+                  </form>
+                </div>
+              </div>
+
+              <script>
+                // JavaScript functions to open and close the modal
+                function openModal() {
+                  document.getElementById("reservationModal").style.display = "block";
+                }
+
+                function closeModal() {
+                  document.getElementById("reservationModal").style.display = "none";
+                }
+              </script>
+            </body>
+
+            </html>
+
+          </span>
+          <!-- book a reservation -->
+
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/hero-slider-1.jpg" class="slider" alt="">
+        <div class="carousel-caption d-none d-md-block ">
+          <h1 class="display-1 logo-bl" >For The Love Of <br> Delicius Food</h1>
+          <p class="display-6 gold">Start The Day with Great Taste</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hero-slider-2.jpg" class="slider" alt="">
+        <div class="carousel-caption d-none d-md-block ">
+          <h1 class="display-1 logo-bl">Flavors Inspired by <br>
+            The Seasons</h1>
+          <p class="display-6 gold">good taste matters</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hero-slider-3.jpg" class="slider" alt="">
+        <div class="carousel-caption d-none d-md-block ">
+          <h1 class="display-1 logo-bl">Eat healthy,<br> Live better</h1>
+          <p class="display-6 gold">we have Midnight craving solution</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hero-slider-4.jpg" class="slider " alt="">
+        <div class="carousel-caption d-none d-md-block ">
+          <h1 class="display-1 logo-bl">Real Indian <br>Appetite</h1>
+          <p class="display-6 gold">Taste the difference</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/hero-slider-5.jpg" class="slider " alt="">
+        <div class="carousel-caption d-none d-md-block ">
+          <h1 class="display-1 logo-bl" >Food with Attitude</h1>
+          <p class="display-6 gold" >We’ve got something for everyone<br>
+            We saved you a seat!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- 
+  __________________*****************************################################################################
+                           Our story main Start from here
+  __________________*****************************################################################################ -->
+
+  <div class="container p-5 bg-dark text-light scrolled">
+    <div class="row">
+      <div class="container d-lg-flex p-2">
+        <div class="col-lg-4 m-2">
+          <h1 class="display-5 find_1">
+            Find Out Our</h1>
+          <h2 class="border-bottom dancing-h2">History</h2>
+          <p class="dancing-p">"In the heart of our town, a cozy restaurant named 'Black-Lily' emerged. With a passion
+            for flavors, our chef
+            crafted delectable dishes from local ingredients, enchanting diners. Word spread, and Black-Lily became a
+            cherished community hub, uniting us through the joy of exceptional food and warm hospitality." <a href="about_us.html">Read more</a>
+          </p>
+        </div>
+        <div class="col-lg-4 content-0 m-2 image"></div>
+        <div class="col-lg-4 content-1 m-2 image"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 
+  __________________*****************************################################################################
+                           second content Startfrom here
+  __________________*****************************################################################################ -->
+
+  <div class="container-fluid">
+    <h3 class="fst-italic text-center p-5">Find out what's happening at Black-Lily.</h3>
+  </div>
+  <div class="container bg-dark">
+    <div class="row g-2">
+      <div class="col-4-md wh d-md-flex flex-lg-wrap">
+        <div class="card card_1">
+          <img src="images/wh-1.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">The sign of freshness & quality</p>
+          </div>
+        </div>
+        <div class="card card_1">
+          <img src="images/wh-2.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Simple and soft behaviour members</p>
+          </div>
+        </div>
+        <div class="card card_1">
+          <img src="images/wh-3.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Places that attract you</p>
+          </div>
+        </div>
+        <div class="card card_1">
+          <img src="images/wh-4.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Explore! New starter pack </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4-md wh d-md-flex flex-lg-wrap">
+        <div class="card card_1">
+          <img src="images/wh-5.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Improved CupCakes </p>
+          </div>
+        </div>
+        <div class="card card_1">
+          <img src="images/wh-6.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Macrons you lovin-it</p>
+          </div>
+        </div>
+        <div class="card card_1">
+          <img src="images/wh-7.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Try the new items with great texture</p>
+          </div>
+        </div>
+        <div class="card card_1">
+          <img src="images/wh-8.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Styled unique NewYork Cheesecake with caramel</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid text-center mt-5 " >
+    <h1 class="display-5">FLAVORS OF ROYALITY</h1>
+    <img src="1751088.svg" alt="" width="120px" class="">
+    <div class="container">
+      <h1 class="text-light display-5">We Offer Top Notch</h1>
+      <p class="px-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, numquam magnam dolores harum
+        velit voluptate totam ut aperiam. Incidunt in repellendus corporis voluptatem esse tempora nisi reiciendis hic
+        accusantium sint.</p>
+    </div>
+    <div class="row FOR p-5">
+      <div class="col align-self-start py-5">
+        <div class="card">
+          <img src="images/breakfast.jpg" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Breakfast</p>
+          </div>
+        </div>
+      </div>
+      <div class="col align-self-center py-5">
+        <div class="card">
+          <img src="images/lunch.jpg" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Signature menu</p>
+          </div>
+        </div>
+      </div>
+      <div class="col align-self-end py-5">
+        <div class="card">
+          <img src="images/dinner.jpeg" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text h5 fst-italic bg-transparent">Main course</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 
+  __________________*****************************################################################################
+                           second content Startfrom here
+  __________________*****************************################################################################ -->
+
+  <div class="container bg-dark mt-3 flavors">
+    <div class="row p-5">
+      <div class="col-md-6">
+        <h1 >Every Flavour Tells a Story</h1>
+        <p class="pe-1">
+          "Every flavor tells a story, a narrative woven from the ingredients, cultures, and traditions that have come
+          together to createbr a taste that transcends time and place Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Quo dicta tempora fugit minus eveniet tempore.. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Iure, ratione distinctio dolorem aliquam molestiae sequi voluptatem, assumenda consequatur
+          natus voluptate praesentium laborum non inventore voluptatum! "
+        </p>
+        <h5 class="ps-5 pe-5">Book Through Call</h5>
+        <h2 class="ps-5 pe-5 fw-bold"><a href="tel:9123456789">(+91) 9650760133</a></h2>
+        <a href="about_us.html" type="button" class="btn mt-5">Read More</a>
+
+      </div>
+      <div class="col-md-6 flavors-1"></div>
+    </div>
+  </div>
+
+  <!-- 
+  __________________*****************************################################################################
+                           second content Startfrom here
+  __________________*****************************################################################################ -->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 special-dish">
+
+      </div>
+      <div class="col-md-6 special-dish-1 text-center">
+        <h5>SPECIAL DISH</h5>
+        <img src="1751088.svg" alt="" width="120px">
+        <h1>Butter Chicken With Tandoori Naan</h1>
+        <p>
+          Butter chicken is a popular Indian dish known for its rich and creamy tomato-based sauce. Tender pieces of
+          marinated chicken are cooked in a flavorful blend of spices, butter, cream, and tomato puree, resulting in a
+          luscious, mildly spicy, and incredibly satisfying dish that's often served with naan or rice.
+        </p>
+        <h2 class="col-arya">$20.00</h2>
+        <a href="menu.html" type="button" class="btn mt-5 button-lily">View All Menu</a>
+
+      </div>
+    </div>
+  </div>
+  <!-- 
+  __________________*****************************################################################################
+                           second content Startfrom here
+  __________________*****************************################################################################ -->
+
+  <div class="container text-center mt-5 bg-dark">
+    <h1 class="col-arya p-3 ">Special Selection</h1>
+    <img src="1751088.svg" alt="" width="120px">
+    <h1 class="display-5">Delicious Menu</h1>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <div class="card mb-3 .h1-style-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/Shahi-Paneer.jpg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title col-arya">Shahi Paneer</h5>
+                <p class="card-text">Shahi Paneer is a decadent North Indian dish known for its creamy tomato-based
+                  gravy and tender paneer (cottage cheese) cubes.
+                </p>
+                <p class="card-text">
+                <h2 class="col-arya">$10.00</h2>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 .h1-style-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/shahi-panner1.jpeg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title col-arya">Murg Mussallam</h5>
+                <p class="card-text">
+                  Murg Mussalam, is an Indian dish that features a whole chicken marinated in a rich and spicy gravy.
+                </p>
+                <p class="card-text">
+                <h2 class="col-arya">$40.00</h2>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 .h1-style-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/shahi-panner2.jpeg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title col-arya">Kadhai Paneer</h5>
+                <p class="card-text">
+                  Kadhai Paneer is a popular North Indian vegetarian dish made with paneer (Indian cottage cheese) and a
+                  flavorful blend of spices.
+                </p>
+                <p class="card-text">
+                <h2 class="col-arya">$12.00</h2>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 .h1-style-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/shahi-panner3.jpeg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title col-arya">Perfect Chicken Alfredo</h5>
+                <p class="card-text">
+                  With a creamy, cheesy sauce and tender chicken breasts, this is the pasta dish we turn to time and
+                  time again when we're craving the ultimate comfort meal.
+                </p>
+                <p class="card-text">
+                <h2 class="col-arya">$24.00</h2>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card mb-3 .h1-style-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/shahi-panner4.jpeg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title col-arya">Lemon Parm Chicken</h5>
+                <p class="card-text">
+                  This dish is warm and comforting, but still simple and fresh. The lemon brightens the sauce and makes
+                  this a feel-good weeknight dinner everyone will love
+                </p>
+                <p class="card-text">
+                <h2 class="col-arya">$10.00</h2>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 .h1-style-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/shahi-panner5.jpeg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title col-arya">Japanese noodle ramen </h5>
+                <p class="card-text">
+                  Japanese ramen is a popular and flavorful noodle dish. It typically consists of Chinese-style wheat
+                  noodles served in a savory broth.
+                </p>
+                <p class="card-text">
+                <h2 class="col-arya">$40.00</h2>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 .h1-style-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/shahi-panner6.jpeg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title col-arya">SPICY MISO RAMEN</h5>
+                <p class="card-text">
+                  This Spicy Miso Ramen recipe features an umami-rich broth, shiitake mushrooms, and sweet pops of corn
+                  to balance the spice
+                </p>
+                <p class="card-text">
+                <h2 class="col-arya">$12.00</h2>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 .h1-style-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/shahi-panner7.jpeg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title col-arya">chicken Biryani</h5>
+                <p class="card-text">
+                  Chicken biryani is a popular and flavorful Indian dish known for its aromatic spices and tender
+                  chicken pieces. It is a one-pot rice dish that combines basmati rice,
+                </p>
+                <p class="card-text">
+                <h2 class="col-arya">$24.00</h2>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <a href="menu.html" type="button" class="btn mt-5 button-lily">View All Menu</a>
+  </div>
+
+  <!-- 
+  __________________*****************************################################################################
+                           second content Startfrom here
+  __________________*****************************################################################################ -->
+
+  <div class="review-section">
+
+    <div class="container mt-5 bg-black text-center">
+      <div class="row px-5">
+        <div class="col-md-8 px-5 bg-dark mt-5">
+          <h1 class="display-1">Online Reservation </h1>
+          Booking request <a href="tel:9123456789" class="col-arya">+91 9123456789</a> or fill out the order form
+          <div class="row mt-2">
+            <div class="col-sm-6  mt-2">
+              <input type="text" placeholder="Your Name" class="input-lily">
+            </div>
+            <div class="col-sm-6 mt-2">
+              <input type="tel" placeholder="Your Number" class="input-lily">
+            </div>
+          </div>
+          <div class="row mt-2 pb-2">
+            <div class="col-sm-4"><input type="number" placeholder="1 person" class="input-lily"></div>
+            <div class="col-sm-4"><input type="date" placeholder="Your Name" class="input-lily"></div>
+            <div class="col-sm-4"><input type="time" placeholder="set your schedule" class="input-lily"></div>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2"
+              ></textarea>
+            <label for="floatingTextarea2">Message</label>
+          </div>
+          <input type="button" value="Book A Table" class="button-lilya p-2 mt-2">
+
+        </div>
+        <div class="col-md-4 mt-5 text-center px-3 bg-dark">
+          <h1 class="display-5">Contact Us</h1>
+          <div class="container text-light">Booking Request</div>
+          <a href="tel:9123456789" class="col-arya display-6">+91 9123456789</a>
+          <div class="container text-light mt-3 fw-bold">Location</div>
+          <span class="px-1"> <i class="fa-solid fa-location-dot"></i></span>
+          <a href="https://maps.app.goo.gl/DA8DivgHqfDEJpK79" class="icon-1">Dark Lily Reataurent <br>Mahipalpur,
+            South West <br>New Delhi, India. 110037</a>
+          <div class="container text-light fw-bold mt-3">Lunch-Time</div>
+          <p>Monday To Sunday <br> 11.00 AM 02.30 PM</p>
+          <div class="container text-light fw-bold mt-3">Dinner-Time</div>
+          <p>Monday To Sunday <br> 05.00 pM 10.00 PM</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 
+  __________________*****************************################################################################
+                           second content Startfrom here
+  __________________*****************************################################################################ -->
+
+  <div class="container bg-dark text-center">
+    <h1 class="col-arya mt-3 pt-5"> Why Choose Us</h1>
+    <img src="1751088.svg" alt="" width="120px">
+    <h1 class="display-5">Our Strength</h1>
+    <div class="row p-3">
+      <div class="col-lg-3 border px-5 mt-2">
+        <img src="images/features-icon-1.png" height="75px" class="mt-2" alt="">
+        <h3>Hygenic Food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis laudantium, facilis et harum
+          consequuntur unde?</p>
+      </div>
+      <div class="col-lg-3 border px-5 mt-2 bg-black">
+        <img src="images/features-icon-2.png" height="75px" class="mt-2" alt="">
+        <h3>Fresh Enviornment</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis laudantium, facilis et harum
+          consequuntur unde?</p>
+      </div>
+      <div class="col-lg-3 border px-5 mt-2">
+        <img src="images/features-icon-3.png" height="75px" class="mt-2" alt="">
+        <h3>Skilled Chef</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis laudantium, facilis et harum
+          consequuntur unde?</p>
+      </div>
+      <div class="col-lg-3 border px-5 mt-2 bg-black">
+        <img src="images/features-icon-4.png" height="75px" class="mt-2" alt="">
+        <h3>Event & Party</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis laudantium, facilis et harum
+          consequuntur unde?</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- 
+  __________________*****************************################################################################
+                           second content Startfrom here
+  __________________*****************************################################################################ -->
+
+
+  <div class="container bg-dark text-center">
+    <h6 class="col-arya mt-3 pt-5"> Recent Updates</h6>
+    <img src="1751088.svg" alt="" width="120px">
+    <h1 class="display-5">Upcoming Events</h1>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card text-bg-dark">
+          <img src="images/events.avif" class="card-img" alt="..." height="550px" >
+          <div class="card-img-overlay">
+            <h5 class="card-title">Diwali</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius earum, id dolor ea alias
+              laudantium voluptatem, rerum velit, praesentium nisi repellendus dicta assumenda quas.</p>
+            <p class="card-text"><small>15/11/2023</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-bg-dark">
+          <img src="images/events2.avif" class="card-img" alt="..." height="550px" >
+          <div class="card-img-overlay">
+            <h5 class="card-title">Beach Party</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius earum, id dolor ea alias
+              laudantium voluptatem, rerum velit, praesentium nisi repellendus dicta assumenda quas.</p>
+            <p class="card-text"><small>25/12/2024</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-bg-dark">
+          <img src="images/events3.avif" class="card-img" alt="..." height="550px" >
+          <div class="card-img-overlay">
+            <h5 class="card-title top-50">New Year Celebration</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius earum, id dolor ea alias
+              laudantium voluptatem, rerum velit, praesentium nisi repellendus dicta assumenda quas.</p>
+            <p class="card-text"><small>01/01/2024</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- 
+  __________________*****************************################################################################
+                           footer content Startfrom here
+  __________________*****************************################################################################ -->
+
+  <footer class="mt-5 footer_a order-2" >
+    <div class="container">
+      <div class="row align-self-center mt-5 p-5">
+        <div class="col-lg-4 text-center px-5 bg-black">
+          <a href="" class="mt-3"><img src="images/blcklily.avif" height="55" alt=""><span class="h3 logo-bl"
+              logo-b2 >Black-Lily</span></a><br><br>
+
+          <a href="https://maps.app.goo.gl/DA8DivgHqfDEJpK79" class="icon-2 mt-3">Dark Lily Reataurent Mahipalpur
+            South West <br> New Delhi, India. 110037</a>
+
+          <a href="mailto:darklily.com" class="icon-2 mt-3">booking@darklily.com</a>
+          <a href="tel:+91 1234567890" class="icon-2 mt-3">Booking Request : +91 0123457890</a>
+          <p class="icon-2">Open : 09:00 am - 01:00 pm</p>
+          <div><img src="1751088.svg" height="85px" alt=""></div>
+          <h1 class="display-6 icon-2">Get News & Offer</h1>
+          <p>Subscribe us & get <span class="text-light">25% off</span></p>
+          <div class="container">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Your email" aria-label="Input group example"
+                aria-describedby="btnGroupAddon2">
+              <div type="button" class="input-group-text button-lilyc">SUBSCRIBE</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 fs-4">
+          <ul>
+            <li><a class="gold" href="index.html">Home</a></li>
+            <li><a class="gold" href="menu.html">Menu</a></li>
+            <li><a class="gold" href="Beverage.html">Beverage</a></li>
+            <li><a class="gold" href="about_us.html">About us</a></li>
+            <li><a class="gold" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 fs-4">
+          <ul>
+            <li><a class="icon-1" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" ></i>
+                <span class="mx-3"></span>Facebook</a></li>
+            <li><a class="icon-1" href="https://twitter.com/"><i class="fa-brands fa-square-twitter"
+                  ></i> <span class="mx-3"></span>Twitter</a></li>
+            <li><a class="icon-1" href="https://Instagram.com/"><i class="fa-brands fa-square-instagram"
+                  ></i> <span class="mx-3"></span>Instagram</a></li>
+            <li><a class="icon-1" href="https://Whatsapp.com/"><i class="fa-brands fa-square-whatsapp"
+                  ></i> <span class="mx-3"></span>Whatsapp</a></li>
+            <li><a class="icon-1" href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"
+                  ></i> <span class="mx-3"></span>Google map</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <footer class="bg-black text-white text-center py-3">
+    <p>&copy; 2023 <a href="https://sumitaryasingh.github.io/project-2023/index.html" class="mt-3"><img src="images/blcklily.avif" height="55" alt="design"><span class="h3"
+          logo-b2 >Black-Lily</span></a>. All rights reserved.</p>
+  </footer>
+
+
+  <!-- 
+  __________________*****************************################################################################
+                           footer content Ends from here
+  __________________*****************************################################################################ -->
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

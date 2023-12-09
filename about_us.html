@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="anime.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-black fixed-top " >
+    <div class="container-fluid header " id="header">
+      <a class="navbar-brand" href="#"><img src="images/blcklily.avif" height="55" alt=""><span class="ms-3 h3 logo-b2">Black-Lily</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 ul-css ">
+          <li class="nav-item h5 ">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link " href="Beverage.html">Beverage</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link active" href="about_us.html">About Us</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+
+          <!-- book a reservation -->
+
+          <span>
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+             
+              <title>Restaurant Reservation</title>
+              <link rel="stylesheet" href="css/style.css">
+
+            </head>
+
+            <body>
+              <!-- Reservation button -->
+              <button class="reservation-button" onclick="openModal()" type="button">RESERVATION</button>
+
+              <!-- Reservation modal -->
+              <div id="reservationModal" class="modal">
+                <div class="modal-content bg-success-subtle">
+                  <span onclick="closeModal()" class="span-class">close</span>
+                  <h2>Restaurant Reservation</h2>
+                  <!-- Add reservation form or content here -->
+                  <p>Please fill out the reservation form.</p>
+                  <form>
+                    <!-- Reservation form fields go here -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="Time">Time:</label>
+                    <input type="time" id="date" name="Time" required>
+                    <br>
+                    <button type="submit" class="mt-3 bg-success">Submit Reservation</button>
+                  </form>
+                </div>
+              </div>
+
+              <script>
+                // JavaScript functions to open and close the modal
+                function openModal() {
+                  document.getElementById("reservationModal").style.display = "block";
+                }
+
+                function closeModal() {
+                  document.getElementById("reservationModal").style.display = "none";
+                }
+              </script>
+            </body>
+
+            </html>
+
+          </span>
+          <!-- book a reservation -->
+
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid"><img src="images/bg-abotus.jpg" alt="" width="100%"></div>
+<div class="container bg-dark mt-3 p-5">
+  <h1 class="dispaly-3 text-center text-white" >Our story</h1>
+  <p class="p-5">
+    Welcome to Black-Lily, where culinary artistry meets warm hospitality. Nestled in the heart of New Delhi our restaurant is a haven for food enthusiasts and connoisseurs alike. <br>
+    
+    At Black-Lily, we are passionate about creating unforgettable dining experiences. Our talented chefs meticulously craft each dish with the finest ingredients, blending flavors and textures to create culinary masterpieces that tantalize the taste buds. <br>
+    
+    But it's not just about the food; it's about the atmosphere and the people. Our cozy, inviting ambiance and friendly staff ensure that every visit is a memorable one. Whether you're celebrating a special occasion or simply craving a delightful meal, we are here to exceed your expectations. <br>
+    
+    We take pride in our commitment to sourcing local and sustainable ingredients, as we believe in supporting our community and preserving the environment.
+    
+    Join us at Black-Lily for a journey of flavors, where every plate tells a story. We look forward to serving you and making your dining experience exceptional. <br>
+    </p>
+</div>
+
+
+<section class="container my-5 bg-dark text-white section_a" >
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>About Our Restaurant</h2>
+            <p>
+                "Welcome to <b>Black-Lily</b> where the flavors of India come to life on your plate. Our passion for authentic Indian cuisine is evident in every dish we prepare. From the rich aroma of our spices to the vibrant colors of our curries, we invite you to embark on a culinary journey through India right here in <b>South West New Delhi</b> Our chefs craft each dish with care, using traditional recipes passed down through generations, ensuring an unforgettable dining experience that captures the essence of India's diverse culinary heritage. Whether you're a seasoned spice enthusiast or new to Indian cuisine, our menu offers something for everyone. Join us and savor the true taste of India.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/hero-slider-5.jpg" class="img-fluid" alt="Restaurant Interior">
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 bg-dark text-white section_b" >
+    <div class="row">
+        <div class="col-lg-6 img-chefs flex-wrap">
+           <div class="row">
+            <div class="col-md-6"><img src="images/chefs-1.avif" alt=""></div>
+            <div class="col-md-6"><img src="images/chefs-2.avif" alt=""></div>
+           </div>
+           <div class="row">
+            <div class="col-md-6"><img src="images/chefs-3.avif" alt=""></div>
+            <div class="col-md-6"><img src="images/chefs-4.avif" alt=""></div>
+           </div>
+          
+                
+        </div>
+
+
+        <div class="col-lg-6">
+            <h2>Our chefs</h2>
+            <p>
+                "At <b>Black-Lily</b> our culinary magic is orchestrated by a team of passionate and skilled chefs who are the heart and soul of our kitchen. Hailing from various regions of India, our chefs bring a wealth of experience and expertise in crafting authentic Indian dishes that tantalize your taste buds. With a deep understanding of spices, flavors, and traditional cooking techniques, our talented chefs transform each ingredient into a culinary masterpiece. <br>
+
+                They take pride in sourcing the finest and freshest ingredients, ensuring that every dish reflects the true essence of Indian cuisine. Whether it's the smoky perfection of tandoori dishes, the aromatic blend of spices in our curries, or the delicate artistry of our desserts, our chefs pour their dedication and love into every creation. <br>
+                
+                Our commitment to excellence, creativity, and innovation shines through in every plate they prepare, making each dining experience at Black-Lily a memorable journey through the diverse and rich flavors of India. We invite you to savor the passion and skill of our chefs as they take you on a gastronomic adventure you won't forget."
+                                
+            </p>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+<div class="container bg-dark p-5 text-center">
+  <h1>Reviews of our customers</h1>
+
+
+
+
+
+<div class="container mt-5">
+
+  <!-- Review by Ankur aggarwal -->
+  <div class="review">
+    <div class="rating">Rating: 5/5</div>
+    <p>"Absolutely fantastic experience! The ambiance was delightful, the service was impeccable, and the dishes were a burst of flavors. A must-visit for food enthusiasts!"</p>
+    <div class="author">Review by Ankur aggarwal.</div>
+  </div>
+
+  <!-- Review by John D. -->
+  <div class="review">
+    <div class="rating">Rating: 4/5</div>
+    <p>"Great place for a casual dinner. The staff was friendly, and the menu had a good variety. The pasta dish I ordered was delicious, and the portions were generous."</p>
+    <div class="author">Review by Jon Ducket.</div>
+  </div>
+
+  <!-- Review by Emily S. -->
+  <div class="review">
+    <div class="rating">Rating: 3/5</div>
+    <p>"Average experience. The food was okay, but nothing stood out. Service was a bit slow, and the atmosphere was average. Might try other places next time."</p>
+    <div class="author">Review by Emily S.</div>
+  </div>
+
+  <!-- Review by Rahul dravid -->
+  <div class="review">
+    <div class="rating">Rating: 5/5</div>
+    <p>"Hidden gem! The chef's specials were outstanding, and the presentation was top-notch. Attentive staff and a cozy atmosphere. I'll definitely be coming back!"</p>
+    <div class="author">Review by  Rahul dravid. </div>
+  </div>
+
+  <!-- Review by Sarah H. -->
+  <div class="review">
+    <div class="rating">Rating: 4/5</div>
+    <p>"Lovely brunch spot! The eggs benedict were perfectly poached, and the coffee was excellent. The outdoor seating area is charming. A nice place to unwind on the weekends."</p>
+    <div class="author">Review by Sarah H.</div>
+  </div>
+
+  <!-- Review by Michael L. -->
+  <div class="review">
+    <div class="rating">Rating: 2/5</div>
+    <p>"Disappointing experience. The steak I ordered was overcooked, and the service was lacking. The restaurant was noisy, making it hard to enjoy the meal."</p>
+    <div class="author">Review by Michael jackson.</div>
+  </div>
+
+  <!-- Review by Jhanshi. -->
+  <div class="review">
+    <div class="rating">Rating: 5/5</div>
+    <p>"Incredible flavors! The fusion of ingredients in each dish was masterfully done. The staff was knowledgeable and made excellent recommendations. A foodie's paradise!"</p>
+    <div class="author">Review by Jhanshi T.</div>
+  </div>
+
+  <!-- Review by Brian lara. -->
+  <div class="review">
+    <div class="rating">Rating: 3/5</div>
+    <p>"Decent place for a quick bite. The menu had a variety of options, but the dish I ordered was just okay. Service was fast, though, which was a plus."</p>
+    <div class="author">Review by Brian Lara.</div>
+  </div>
+
+  <!-- Review by Jaspreet singh -->
+  <div class="review">
+    <div class="rating">Rating: 4/5</div>
+    <p>"Cozy atmosphere and friendly staff. The cocktails were creative, and the appetizers were a hit. Would recommend for a casual evening out with friends."</p>
+    <div class="author">Review by Jaspreet singh.</div>
+  </div>
+
+  <!-- Review by Arya Singh -->
+  <div class="review">
+    <div class="rating">Rating: 5/5</div>
+    <p>"Exceptional service and delicious food! The attention to detail in every dish was evident. The chef's specials showcased the restaurant's commitment to culinary excellence."</p>
+    <div class="author">Review by Arya singh</div>
+  </div>
+
+</div>
+
+</div>
+  <!-- 
+  __________________*****************************################################################################
+                           footer content Startfrom here
+  __________________*****************************################################################################ -->
+
+  <footer class="mt-5 footer_a order-2" >
+    <div class="container">
+      <div class="row align-self-center mt-5 p-5">
+        <div class="col-lg-4 text-center px-5 bg-black">
+          <a href="" class="mt-3"><img src="images/blcklily.avif" height="55" alt=""><span class="h3 logo-bl"
+              logo-b2 >Black-Lily</span></a><br><br>
+
+          <a href="https://maps.app.goo.gl/DA8DivgHqfDEJpK79" class="icon-2 mt-3">Dark Lily Reataurent Mahipalpur
+            South West <br> New Delhi, India. 110037</a>
+
+          <a href="mailto:darklily.com" class="icon-2 mt-3">booking@darklily.com</a>
+          <a href="tel:+91 1234567890" class="icon-2 mt-3">Booking Request : +91 0123457890</a>
+          <p class="icon-2">Open : 09:00 am - 01:00 pm</p>
+          <div><img src="1751088.svg" height="85px" alt=""></div>
+          <h1 class="display-6 icon-2">Get News & Offer</h1>
+          <p>Subscribe us & get <span class="text-light">25% off</span></p>
+          <div class="container">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Your email" aria-label="Input group example"
+                aria-describedby="btnGroupAddon2">
+              <div type="button" class="input-group-text button-lilyc">SUBSCRIBE</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 fs-4">
+          <ul>
+            <li><a class="gold" href="index.html">Home</a></li>
+            <li><a class="gold" href="menu.html">Menu</a></li>
+            <li><a class="gold" href="Beverage.html">Beverage</a></li>
+            <li><a class="gold" href="about_us.html">About us</a></li>
+            <li><a class="gold" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 fs-4">
+          <ul>
+            <li><a class="icon-1" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" ></i>
+                <span class="mx-3"></span>Facebook</a></li>
+            <li><a class="icon-1" href="https://twitter.com/"><i class="fa-brands fa-square-twitter"
+                  ></i> <span class="mx-3"></span>Twitter</a></li>
+            <li><a class="icon-1" href="https://Instagram.com/"><i class="fa-brands fa-square-instagram"
+                  ></i> <span class="mx-3"></span>Instagram</a></li>
+            <li><a class="icon-1" href="https://Whatsapp.com/"><i class="fa-brands fa-square-whatsapp"
+                  ></i> <span class="mx-3"></span>Whatsapp</a></li>
+            <li><a class="icon-1" href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"
+                  ></i> <span class="mx-3"></span>Google map</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <footer class="bg-black text-white text-center py-3">
+    <p>&copy; 2023 <a href="https://sumitaryasingh.github.io/project-2023/index.html" class="mt-3"><img src="images/blcklily.avif" height="55" alt="design"><span class="h3"
+          logo-b2 >Black-Lily</span></a>. All rights reserved.</p>
+  </footer>
+
+
+  <!-- 
+  __________________*****************************################################################################
+                           footer content Ends from here
+  __________________*****************************################################################################ -->
+  
+      <script src="bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

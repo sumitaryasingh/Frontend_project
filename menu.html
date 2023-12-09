@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="anime.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-black fixed-top " >
+    <div class="container-fluid header " id="header">
+      <a class="navbar-brand" href="#"><img src="images/blcklily.avif" height="55" alt=""><span class="ms-3 h3 logo-b2">Black-Lily</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 ul-css ">
+          <li class="nav-item h5 ">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link active" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link " href="Beverage.html">Beverage</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+
+          <!-- book a reservation -->
+
+          <span>
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+             
+              <title>Restaurant Reservation</title>
+              <link rel="stylesheet" href="css/style.css">
+
+            </head>
+
+            <body>
+              <!-- Reservation button -->
+              <button class="reservation-button" onclick="openModal()" type="button">RESERVATION</button>
+
+              <!-- Reservation modal -->
+              <div id="reservationModal" class="modal">
+                <div class="modal-content bg-success-subtle">
+                  <span onclick="closeModal()" class="span-class">close</span>
+                  <h2>Restaurant Reservation</h2>
+                  <!-- Add reservation form or content here -->
+                  <p>Please fill out the reservation form.</p>
+                  <form>
+                    <!-- Reservation form fields go here -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="Time">Time:</label>
+                    <input type="time" id="date" name="Time" required>
+                    <br>
+                    <button type="submit" class="mt-3 bg-success">Submit Reservation</button>
+                  </form>
+                </div>
+              </div>
+
+              <script>
+                // JavaScript functions to open and close the modal
+                function openModal() {
+                  document.getElementById("reservationModal").style.display = "block";
+                }
+
+                function closeModal() {
+                  document.getElementById("reservationModal").style.display = "none";
+                }
+              </script>
+            </body>
+
+            </html>
+
+          </span>
+          <!-- book a reservation -->
+
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container-fluid">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner menu-car ">
+          <div class="carousel-item active">
+            <img src="images/menu-3.jpg" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="logo-b3 display-6 ">Welcome to Our Culinary Delights</h3>
+              <p class="gold1 h3 ">
+                Experience a symphony of flavors and artistry on a
+                plate at Black-Lily. Our menu is a celebration of
+                fresh, locally sourced ingredients, expertly prepared to
+                tantalize your taste buds.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/menu-2.jpg" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="logo-b3 display-6">Welcome to Our Culinary Delights</h3>
+              <p class="gold1 h3">
+                Explore our diverse selection of appetizers,
+                entrees, desserts, and beverages, each crafted with passion and
+                precision by our talented chefs..
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/menu-1.jpg" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="logo-b3 display-6">Welcome to Our Culinary Delights</h3>
+              <p class="gold1 h3">
+                Prepare to embark on a culinary journey that will
+                delight your senses and leave you craving for more. Bon appétit!
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+   
+
+
+    <div class="container mt-5">
+      <h1 class="text-center display-3">Menu of Black-Lily</h1>
+      <p>"Embark on a culinary journey with our exquisite menu at Black Lily, where every dish is a symphony of flavors meticulously crafted to tantalize your taste buds. From aromatic spices to succulent textures, our offerings are a celebration of the vibrant and diverse tapestry of Indian cuisine. Experience the magic of our chef's expertise, where each bite tells a story of tradition, authenticity, and the passion we pour into every plate. At Black Lily, we don't just serve food; we create an unforgettable dining experience that leaves a lasting impression."</p>
+    </div>
+  
+    <div class="container bg-dark ">
+      <h1 class="display-5 text-white text-center">Appetizers</h1>
+      <p>"Savor the anticipation of a delightful meal with our enticing array of appetizers at Black Lily. Start your culinary journey with our carefully crafted appetizers that promise to awaken your palate. From crispy samosas with savory fillings to succulent kebabs bursting with flavors, each bite is a prelude to the culinary excellence that awaits. Our appetizers are more than just the beginning; they are a tantalizing introduction to the extraordinary dining experience we offer. At Black Lily, we invite you to indulge in the art of appetizing moments and set the stage for an unforgettable meal."</p>
+
+      <div class="row py-3">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab.jpg" class="card-img-top" alt="..." />
+
+                <div class="card-body ">
+                  <h5 class="card-title">Bruschetta</h5>
+                  <p class="card-text text-white-50">
+                    Toasted baguette slices topped with diced tomatoes, fresh
+                    basil, garlic, and olive oil.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab1.webp" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Spinach and Artichoke Dip</h5>
+                  <p class="card-text text-white-50">
+                    A creamy blend of spinach, artichokes, and cheese, served
+                    with tortilla chips or bread.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab2.webp" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Stuffed Mushrooms</h5>
+                  <p class="card-text text-white-50">
+                    Mushroom caps filled with seasoned breadcrumbs, cheese, and
+                    herbs
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab3.avif" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Caprese Salad</h5>
+                  <p class="card-text text-white-50">
+                    Slices of fresh mozzarella cheese, tomatoes, basil leaves,
+                    and balsamic reduction.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Calamari:</h5>
+                  <p class="card-text text-white-50">
+                    Lightly breaded and fried squid rings, often served with
+                    marinara sauce or aioli.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Shrimp Cocktail</h5>
+                  <p class="card-text text-white-50">
+                    Chilled shrimp served with a zesty cocktail sauce.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Mozzarella Sticks</h5>
+                  <p class="card-text text-white-50">
+                    Breaded and fried mozzarella cheese sticks served with
+                    marinara sauce.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Potato Skins</h5>
+                  <p class="card-text text-white-50">
+                    Halved baked potato skins filled with cheese, bacon bits,
+                    and sour cream.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">
+                    Honey Pepper Chicken Wings</h5>
+                  <p class="card-text text-white-50">
+                    Experience the perfect balance of sweet and savory with our Honey Pepper Chicken Wings at Black Lily.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab10.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">
+                    FRESH AND DELICIOUS SALAD ROLLS</h5>
+                  <p class="card-text text-white-50">
+                    This recipe is a fun way to get your veggies in! It’s simple, fresh and is a great appetizer to any meal!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">samosas</h5>
+                  <p class="card-text text-white-50">
+                    Delight in the iconic flavors of our Samosas at Black Lily. These golden, crisp parcels of joy are generously filled with a medley of seasoned potatoes, peas, and aromatic spices
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/ab12.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Garlic parmesan bread</h5>
+                  <p class="card-text text-white-50">
+                    Indulge in the irresistible allure of our Garlic Parmesan Bread at Black Lily. Our artisanal bread is lovingly infused with the rich essence of garlic and generously sprinkled with premium Parmesan cheese
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+  __________________*****************************################################################################
+                           main course content Startfrom here
+  __________________*****************************################################################################ -->
+
+    <div class="container bg-dark mt-5">
+      <h1 class="display-3 text-white text-center">Main Course</h1>
+      <p>"Immerse yourself in the heart of our culinary journey with the exquisite main courses at Black Lily. Each dish is a celebration of authenticity, meticulously prepared to transport you to the diverse and vibrant landscapes of Indian cuisine. From aromatic biryanis that captivate your senses to robust curries that embody the essence of regional flavors, our main courses are a testament to the artistry of our chefs.
+
+        Indulge in the symphony of spices and textures as you explore our diverse menu, where every dish tells a story of tradition and culinary excellence. At Black Lily, we invite you to savor the richness of our main courses, each crafted with passion and precision to offer you an unparalleled dining experience. Prepare to embark on a gastronomic journey that transcends the ordinary, and let our main courses become the centerpiece of your culinary adventure."</p>
+
+      <div class="row py-2 g-2">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img
+                  src="images/special-dish.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body ">
+                  <h5 class="card-title">Butter Chicken</h5>
+                  <p class="card-text text-white-50">
+                    A creamy and rich tomato-based curry with tender pieces of
+                    marinated chicken, infused with butter and a blend of
+                    aromatic spices.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m2.png" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Chicken Tikka Masala:</h5>
+                  <p class="card-text text-white-50">
+                    Succulent pieces of grilled chicken simmered in a luscious
+                    tomato and cream-based gravy, with a medley of spices for a
+                    flavorful dish.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m3.png" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Paneer Tikka Masala</h5>
+                  <p class="card-text text-white-50">
+                    Soft cubes of paneer marinated and grilled, served in a
+                    creamy tomato sauce, making it a vegetarian delight.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m4.png" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Dal Makhani</h5>
+                  <p class="card-text text-white-50">
+                    A slow-cooked lentil curry made from black gram and kidney
+                    beans, simmered in a creamy tomato gravy, and seasoned with
+                    spices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-2">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m5.webp" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Rogan Josh</h5>
+                  <p class="card-text text-white-50">
+                    A fragrant and hearty lamb curry with tender pieces of meat
+                    cooked in a rich, aromatic gravy, traditionally seasoned
+                    with Kashmiri spices.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m6.avif" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Palak Paneer</h5>
+                  <p class="card-text text-white-50">
+                    A nutritious dish of paneer cooked in a creamy spinach
+                    gravy, bursting with flavors and served with Indian bread.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m7.png" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Chole Bhature</h5>
+                  <p class="card-text text-white-50">
+                    A North Indian favorite, Chole Bhature consists of spicy
+                    chickpea curry served with deep-fried bread, Bhature.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m8.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Chicken Biryani</h5>
+                  <p class="card-text text-white-50">
+                    Fragrant basmati rice cooked with aromatic spices and a
+                    choice of chicken, mutton, or vegetables, creating a
+                    flavorful one-pot dish.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-2">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Fish Curry</h5>
+                  <p class="card-text text-white-50">
+                    Fish pieces cooked in a tangy and spicy gravy made from
+                    tamarind, coconut, and a blend of South Indian spices.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m10.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Mutton Korma</h5>
+                  <p class="card-text text-white-50">
+                    A creamy and mildly spiced curry featuring tender mutton
+                    pieces, often prepared with yogurt and ground nuts for a
+                    rich texture.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Aloo Gobi</h5>
+                  <p class="card-text text-white-50">
+                    Soft cubes of paneer marinated and grilled, served in a
+                    creamy tomato sauce, making it a vegetarian delight.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/m12.png" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Idli Sambar</h5>
+                  <p class="card-text text-white-50">
+                    Idli Sambar is a beloved South Indian breakfast dish that
+                    consists of soft, steamed rice cakes known as "idli" and a
+                    flavorful, aromatic lentil-based stew called "sambar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+  __________________*****************************################################################################
+                           main course content Startfrom here
+  __________________*****************************################################################################ -->
+
+    <div class="container bg-dark mt-5">
+      <h1 class="display-3 text-white text-center">Dessert</h1>
+      <p>        
+        Indulge your sweet cravings with our exquisite Decadent Chocolate Delight. Immerse yourself in a world of rich, velvety chocolate goodness that will tantalize your taste buds and leave you craving for more.
+        Our Decadent Chocolate Delight is a symphony of premium ingredients crafted to perfection. Layers of moist chocolate cake are generously sandwiched between velvety chocolate ganache, creating a heavenly combination that promises to satisfy your sweet tooth.</p>
+
+      <div class="row py-2">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Tiramisu</h5>
+                  <p class="card-text text-white-50">
+                    Tiramisu is a classic Italian dessert made with layers of
+                    coffee-soaked ladyfingers and a mascarpone cheese mixture
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d2.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Baklava</h5>
+                  <p class="card-text text-white-50">
+                    Baklava is a sweet pastry made of layers of phyllo dough,
+                    filled with chopped nuts (often walnuts or pistachios), and
+                    sweetened with honey or syrup.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Churros</h5>
+                  <p class="card-text text-white-50">
+                    Churros are deep-fried dough pastries, typically served as
+                    long, ridged sticks. They are crispy on the outside and soft
+                    on the inside,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d4.png" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Gulab Jamun</h5>
+                  <p class="card-text text-white-50">
+                    Gulab Jamun is a popular Indian dessert made from milk
+                    solids (khoya) that are deep-fried until golden brown and
+                    then soaked in a sweet sugar syrup
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-2">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d5.webp" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Pastel de Nata</h5>
+                  <p class="card-text text-white-50">
+                    Pastel de Nata, also known as Portuguese custard tart, is a
+                    pastry filled with a creamy custard and baked until it has a
+                    flaky, caramelized top.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d6.webp" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Knafeh</h5>
+                  <p class="card-text text-white-50">
+                    Knafeh is a Middle Eastern dessert made from shredded phyllo
+                    dough layered with sweet cheese or semolina, soaked in a
+                    rosewater and baked until golden and crispy.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Chè</h5>
+                  <p class="card-text text-white-50">
+                    Chè is a Vietnamese dessert soup that comes in various
+                    flavors and combinations. It typically includes ingredients
+                    like mung beans.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d8.png" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Black Forest Cake</h5>
+                  <p class="card-text text-white-50">
+                    Black Forest Cake, or Schwarzwälder Kirschtorte, is a German
+                    dessert consisting of layers of chocolate sponge cake filled
+                    with whipped cream and cherries.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-2">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Mochi Ice Cream</h5>
+                  <p class="card-text text-white-50">
+                    Mochi ice cream is a Japanese dessert consisting of small,
+                    round rice cakes (mochi) filled with ice cream.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d10.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Crème Brûlée</h5>
+                  <p class="card-text text-white-50">
+                    Crème brûlée is a French dessert consisting of a rich
+                    custard base topped with a layer of caramelized sugar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Bingsu</h5>
+                  <p class="card-text text-white-50">
+                    Bingsu is a Korean dessert that typically features shaved
+                    ice topped with various sweet toppings like condensed milk,
+                    fruit, red bean paste, and ice cream.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id="card" class="card card-style-1 ">
+                <img src="images/d12.png" class="card-img-top" alt="..." />
+                <div class="card-body ">
+                  <h5 class="card-title">Tres Leches Cake</h5>
+                  <p class="card-text text-white-50">
+                    Tres leches cake is a moist sponge cake soaked in a mixture
+                    of three milks: evaporated milk, condensed milk, and heavy
+                    cream.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+  __________________*****************************################################################################
+                           main course content end here
+  __________________*****************************################################################################ -->
+
+    <!-- 
+  __________________*****************************################################################################
+                           footer content Startfrom here
+  __________________*****************************################################################################ -->
+
+    <footer class="mt-5 footer_a order-2">
+      <div class="container">
+        <div class="row align-self-center mt-5 p-5">
+          <div class="col-lg-4 text-center px-5 bg-black">
+            <a href="" class="mt-3"
+              ><img src="images/blcklily.avif" height="55" alt="" /><span
+                class="h3 logo-bl"
+                logo-b2
+                >Black-Lily</span
+              ></a
+            ><br /><br />
+
+            <a
+              href="https://maps.app.goo.gl/DA8DivgHqfDEJpK79"
+              class="icon-2 mt-3"
+              >Dark Lily Reataurent Mahipalpur South West <br />
+              New Delhi, India. 110037</a
+            >
+
+            <a href="mailto:darklily.com" class="icon-2 mt-3"
+              >booking@darklily.com</a
+            >
+            <a href="tel:+91 1234567890" class="icon-2 mt-3"
+              >Booking Request : +91 0123457890</a
+            >
+            <p class="icon-2">Open : 09:00 am - 01:00 pm</p>
+            <div><img src="1751088.svg" height="85px" alt="" /></div>
+            <h1 class="display-6 icon-2">Get News & Offer</h1>
+            <p>Subscribe us & get <span class="text-light">25% off</span></p>
+            <div class="container">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your email"
+                  aria-label="Input group example"
+                  aria-describedby="btnGroupAddon2"
+                />
+                <div type="button" class="input-group-text button-lilyc">
+                  SUBSCRIBE
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 fs-4">
+            <ul>
+              <li><a class="gold" href="index.html">Home</a></li>
+              <li><a class="gold" href="menu.html">Menu</a></li>
+              <li><a class="gold" href="Beverage.html">Beverage</a></li>
+              <li><a class="gold" href="about_us.html">About us</a></li>
+              <li><a class="gold" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 fs-4">
+            <ul>
+              <li>
+                <a class="icon-1" href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook"></i>
+                  <span class="mx-3"></span>Facebook</a
+                >
+              </li>
+              <li>
+                <a class="icon-1" href="https://twitter.com/"
+                  ><i class="fa-brands fa-square-twitter"></i>
+                  <span class="mx-3"></span>Twitter</a
+                >
+              </li>
+              <li>
+                <a class="icon-1" href="https://Instagram.com/"
+                  ><i class="fa-brands fa-square-instagram"></i>
+                  <span class="mx-3"></span>Instagram</a
+                >
+              </li>
+              <li>
+                <a class="icon-1" href="https://Whatsapp.com/"
+                  ><i class="fa-brands fa-square-whatsapp"></i>
+                  <span class="mx-3"></span>Whatsapp</a
+                >
+              </li>
+              <li>
+                <a class="icon-1" href="https://www.google.com/maps"
+                  ><i class="fa-solid fa-location-dot"></i>
+                  <span class="mx-3"></span>Google map</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="bg-black text-white text-center py-3">
+      <p>
+        &copy; 2023
+        <a
+          href="https://sumitaryasingh.github.io/project-2023/index.html"
+          class="mt-3"
+          ><img src="images/blcklily.avif" height="55" alt="design" /><span
+            class="h3"
+            logo-b2
+            >Black-Lily</span
+          ></a
+        >. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- 
+  __________________*****************************################################################################
+                           footer content Ends from here
+  __________________*****************************################################################################ -->
+
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
